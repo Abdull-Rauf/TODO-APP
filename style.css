@@ -1,0 +1,99 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    }
+  #root{
+      width: 100%;
+      height: 100%;
+    }
+  .bg{
+    background-image: url('bg-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    }
+  h2{
+      padding: 20px;
+      color: white;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      display: block;
+      font-size: 2.5em;
+      margin-block-start: 0.01em;
+      margin-block-end: 0.01em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+    }
+  #inputDiv{
+    margin-top: 0%;
+    color: white;
+    text-align: center;
+    padding: 50px 30px;
+    }
+  #inputContainer{
+      margin: auto;
+    }
+  input{
+        border: none;
+        border-radius: 0;
+        width: 60%;
+        padding: 10px;
+        font-size: 16px;
+        color: rgb(112, 112, 110);
+    }
+  .add-btn {
+      padding: 10px;
+      width: 20%;
+      background: #5336a3;
+      color: rgb(250, 245, 245);
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 0;
+    }
+  #listDiv{
+    }
+  ul {
+    margin: auto;
+    width: 70%;
+    }
+  
+  ul li {
+      cursor: pointer;
+      position: relative;
+      padding: 12px;
+      list-style-position: inside;
+      list-style-type: none;
+      background-color: #FFFFFF;
+      font-size: 21px;
+      transition: 0.2s;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+      
+  ul li:nth-child(even) {
+    background:#d7c5f0;
+    }
+  
+  .deleteLi{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    width: 5%;
+    color: #5336a3;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0;
+    }
+    
+  .deleteLi:hover {
+     color:white;
+     background-color: #5336a3;
+    }
