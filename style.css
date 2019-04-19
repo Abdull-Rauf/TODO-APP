@@ -53,9 +53,7 @@ body, html {
       cursor: pointer;
       border-radius: 0;
     }
-  #listDiv{
-    }
-  ul {
+    ul {
     margin: auto;
     width: 70%;
     }
