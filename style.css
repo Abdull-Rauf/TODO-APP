@@ -26,6 +26,10 @@ body, html {
       margin-inline-end: 0px;
       font-weight: bold;
     }
+    .span{
+
+      font-size: 25px;
+    }
   #inputDiv{
     margin-top: 0%;
     color: white;
@@ -42,6 +46,7 @@ body, html {
         padding: 10px;
         font-size: 16px;
         color: rgb(112, 112, 110);
+        border-radius: 15px 0px 0px 15px;;
     }
   .add-btn {
       padding: 10px;
@@ -51,7 +56,7 @@ body, html {
       text-align: center;
       font-size: 16px;
       cursor: pointer;
-      border-radius: 0;
+      border-radius: 0px 15px 15px 0px;
     }
     ul {
     margin: auto;
@@ -71,6 +76,7 @@ body, html {
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
+      border-radius: 15px;
     }
       
   ul li:nth-child(even) {
@@ -88,10 +94,20 @@ body, html {
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 0;
+    border-radius: 0px 15px 15px 0px;
     }
     
   .deleteLi:hover {
      color:white;
      background-color: #5336a3;
+    }
+    @media only screen and (max-width: 560px) {
+      h2 {
+        font-size: 30px;
+      }
+    }
+    @media only screen and (max-width: 360px) {
+      h2 {
+        font-size: 20px;
+      }
     }
