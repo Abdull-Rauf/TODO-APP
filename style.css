@@ -2,13 +2,15 @@
 body, html {
     height: 100%;
     margin: 0;
+    
     }
   #root{
       width: 100%;
       height: 100%;
+      background-image: radial-gradient(circle, rgb(212, 114, 212), rgb(109, 109, 211));
     }
   .bg{
-    background-image: url('images/bg-img.jpg');
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

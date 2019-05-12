@@ -15,7 +15,7 @@ document.getElementById("inputDiv").appendChild(h2);
 let totalTasks = document.createElement("span");
 totalTasks.className = "span";
 totalTasks.style.fontSize = "10";
-totalTasks.innerHTML = "(0)";
+totalTasks.innerHTML = "";
 h2.appendChild(totalTasks);
 
 //Create input field and submit button container div
@@ -52,29 +52,26 @@ document.getElementById("listDiv").appendChild(ul);
 
 //Add new Li when Add button is clicked
 document.getElementById("add-btn").addEventListener("click", addLiText);
-document.getElementById("add-btn").addEventListener("click", function(){
-
-  let c = document.getElementById("ul").childElementCount;
-  return totalTasks.innerHTML = "(" + c + ")";
-
-});
 //Add new Li when enter key is pressed
 document.getElementById("add-todo").addEventListener("keypress", e => e.keyCode === 13 && addLiText());
-
+let countTasks = ul.childElementCount;
 function addLiText() {
+  
   let inputText = document.getElementById("add-todo").value;
-  let c = document.getElementById("ul").childElementCount;
 
-  if (inputText === "") {
-    // || inputText.match(/\s/g) !== null
+  if (inputText === ' ' || inputText === '') {
+
     alert("You must write something!");
+
   } else {
+    
     let li = document.createElement("li");
     let liText = document.createTextNode(inputText);
     li.appendChild(liText);
 
-    document.getElementById("ul").appendChild(li);
-    totalTasks.innerHTML = "(" + c + ")";
+
+    ul.insertBefore(li, ul.childNodes[0]);
+    totalTasks.innerHTML = `(${ul.childElementCount})`
     document.getElementById("add-todo").value = "";
 
     let deleteBtn = document.createElement("span");
@@ -83,7 +80,7 @@ function addLiText() {
     li.appendChild(deleteBtn);
     deleteBtn.addEventListener("click", function() {
       ul.removeChild(li);
-      return (totalTasks.innerHTML = "(" + c + ")");
+      return totalTasks.innerHTML = `(${ul.childElementCount})`
     });
   }
 }
