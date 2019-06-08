@@ -5,4 +5,4 @@ Delete an item option.
 
 
 Live demo
-https://abdulrauf84.github.io/My-TODO-APP/
+https://abdulrauf84.github.io/TODO-APP/
