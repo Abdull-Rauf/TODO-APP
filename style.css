@@ -8,8 +8,12 @@ body{
     font-size: 14px;
 
 }
-.template{
+.link{
 	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	column-gap: 30px;
+	padding: 20px;
 }
 .wrapper{
     display: grid;
