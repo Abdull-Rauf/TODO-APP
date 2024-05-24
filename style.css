@@ -13,7 +13,7 @@ body{
 	display: flex;
 	justify-content: flex-start;
 	column-gap: 30px;
-	padding: 20px;
+	padding: 80px;
 }
 .wrapper{
     display: grid;
